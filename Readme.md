@@ -20,12 +20,6 @@ Git Pluck allows you to selectively sync files from a source branch to a target 
 
 ### Using npx (Recommended)
 ```bash
-# Sync using default settings (development → production)
-npx git-pluck
-
-# Sync with custom file list
-npx git-pluck my-files.txt
-
 # Sync between different branches
 npx git-pluck -s main -t staging
 ```
@@ -78,26 +72,15 @@ USAGE:
 
 OPTIONS:
   -f, --file-list <path>    Path to file list (default: files-to-pick.txt)
-  -s, --source <branch>     Source branch name (default: development)
-  -t, --target <branch>     Target branch name (default: production)
-      --dry-run            Show what would be synced without making changes
+  -s, --source <branch>     Source branch name 
+  -t, --target <branch>     Target branch namek 
   -v, --version            Show version number
   -h, --help               Show this help message
 ```
 
 ## 📝 Examples
 
-### Basic Usage
-```bash
-# Create your file list
-echo "src/components/Button.js" > files-to-pick.txt
-echo "src/styles/button.css" >> files-to-pick.txt
-
-# Sync the files
-npx git-pluck
-```
-
-### Advanced Usage
+### Usage
 ```bash
 # Sync from feature branch to main
 npx git-pluck -s feature/new-ui -t main -f ui-files.txt
@@ -126,11 +109,7 @@ UI Updates
 EOF
 
 # 3. Sync the files
-npx git-pluck -s development
-
-# 4. Review and commit
-git diff --staged
-git commit -m "Sync critical fixes and UI updates from development"
+npx git-pluck -s development -t production -f files-to-pick.txt
 ```
 
 ## 🔧 Configuration
@@ -193,28 +172,17 @@ cd git-pluck
 # Install dependencies
 npm install
 
-# Test locally
-npm test
-
 # Link for local development
 npm link
 git-pluck --help
 ```
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - Inspired by Git's cherry-pick functionality
+- Built for the use @spense-fintech now open-sourced for the public use 
 - Built for teams who need selective file synchronization
 - Perfect for managing releases and hotfixes
 
 ---
 
-**Made with ❤️ for developers who love precise Git workflows**
