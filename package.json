@@ -1,0 +1,45 @@
+{
+  "name": "git-pluck",
+  "version": "1.0.0",
+  "description": "Sync specific files from one Git branch to another with rich file list support",
+  "main": "index.js",
+  "bin": {
+    "gitpluck": "./bin/git-pluck.js"
+  },
+  "scripts": {
+    "prepare": "chmod +x bin/git-pluck.js"
+  },
+  "keywords": [
+    "git",
+    "sync",
+    "files",
+    "branch",
+    "cherry-pick",
+    "cli",
+    "development",
+    "merge",
+    "selective-sync"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/git-pluck.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/git-pluck/issues"
+  },
+  "homepage": "https://github.com/yourusername/git-pluck#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  }
+}
