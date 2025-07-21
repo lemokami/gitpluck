@@ -1,4 +1,7 @@
-# 🌸 Git Pluck
+<img width="128" height="128" alt="image" src="https://github.com/user-attachments/assets/40928cdd-6ed6-424b-b823-56cf5cb67581" />
+
+# Git Pluck
+
 
 > Sync specific files from one Git branch to another with rich file list support
 
