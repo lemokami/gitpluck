@@ -1,5 +1,5 @@
 {
-  "name": "git-pluck",
+  "name": "gitpluck",
   "version": "1.0.0",
   "description": "Sync specific files from one Git branch to another with rich file list support",
   "main": "index.js",
@@ -24,12 +24,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/git-pluck.git"
+    "url": "https://github.com/lemokami/gitpluck.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/git-pluck/issues"
+    "url": "https://github.com/lemokami/gitpluck/issues"
   },
-  "homepage": "https://github.com/yourusername/git-pluck#readme",
+  "homepage": "https://github.com/lemokami/gitpluck#readme",
   "engines": {
     "node": ">=14.0.0"
   },
@@ -38,8 +38,5 @@
     "src/",
     "README.md",
     "LICENSE"
-  ],
-  "devDependencies": {
-    "eslint": "^8.0.0"
-  }
+  ]
 }
